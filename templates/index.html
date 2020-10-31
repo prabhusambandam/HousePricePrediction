@@ -1,0 +1,27 @@
+<html>
+<head>
+<body style = "background:  rgb(201, 206,199)" >
+ <h1> Weight Prediction based on height</h1>
+ <form action="/predict" method = "POST">
+ <input type="text" name = "SQUARE_FT" placeholder="Enter SQUARE FT Value" />
+ <input type="text" name = "BHK_NO" placeholder="Enter Number of BHK" />
+ <input type="text" name = "LONGITUDE" placeholder="Enter Location of LONGITUDE Value" />
+ <input type="text" name = "LATITUDE" placeholder="Enter Location of LATITUDE Value" />
+ <label for="cars">RESALE :</label>
+	<select name="RESALE" id="RESALE">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	 </select>
+<label for="READY_TO_MOVE">READY_TO_MOVE :</label>
+	<select name="READY_TO_MOVE" id="READY_TO_MOVE">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	 </select>
+
+ <button type  = "submit" name = "predict"> Predict PRICE IN LACS</button>       
+ </form>
+</body>
+</head>
+{{prediction_text}}
+
+</html>
