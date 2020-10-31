@@ -1,0 +1,51 @@
+<html>
+<head>
+<body style = "background:  rgb(201, 206,199)" >
+ <h1> Weight Prediction based on height</h1>
+ <form action="/predict" method = "POST">
+ <table style="width:50%" border=1>
+  <tr>
+    <th>Enter SQUARE FT Value :</th>
+    <td><input type="text" align="right" name = "SQUARE_FT" placeholder="Enter SQUARE FT Value" /></td>
+  </tr>
+  <tr>
+    <th >Enter Number of BHK :</th>
+    <td><input type="text" name = "BHK_NO" placeholder="Enter Number of BHK" /></td>
+  </tr>
+   <tr>
+    <th >Enter Location of LONGITUDE Value :</th>
+    <td><input type="text" name = "LONGITUDE" placeholder="Enter Location of LONGITUDE Value" /></td>
+  </tr>
+   <tr>
+    <th >Enter Location of LATITUDE Value :</th>
+    <td><input type="text" name = "LATITUDE" placeholder="Enter Location of LATITUDE Value" /></td>
+  </tr>
+   <tr>
+    <th > <label for="RESALE">RESALE :</label></th>
+    <td><select name="RESALE" id="RESALE">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	 </select></td>
+  </tr>
+   <tr>
+    <th > <label for="READY_TO_MOVE">READY_TO_MOVE :</label></th>
+  <td>	<select name="READY_TO_MOVE" id="READY_TO_MOVE">
+	  <option value="1">Yes</option>
+	  <option value="0">No</option>
+	 </select>
+	</td>
+  </tr>
+  <tr>
+    <th valign="middle"><button type  = "submit" name = "predict"> Predict PRICE IN LACS</button>  </th>
+	<td>{{prediction_text}} </td>
+  </tr>
+</table>
+
+
+      
+ </form>
+</body>
+</head>
+
+
+</html>
